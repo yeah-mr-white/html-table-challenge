@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Libre Baskerville', serif;
+      font-family: 'Roboto', sans-serif;
+      color: #464646;
+      font-size: 18px;
+    }
+
+    #container {
+      width: 1080px;
+      margin: 50px auto;
+      padding: 30px 40px 40px 40px;
+      background-color: rgb(250, 242, 233);
+      border-radius: 7px;
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+      -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+    }
+      
+    table {
+      width: 100%;
+    }
+
+    th {
+      font-size: 2.5em;
+      text-align: start;
+      color: #FF4500;
+      padding: 15px 0;
+    }
+
+    td {
+      padding: 5px 0;
+    }
+
+    .adding-space {
+      padding-left: 100px;
+    }
+
+    .rating-container {
+      text-align: end;
+      color: orangered;
+    }
+
+    .btn-section {
+      text-align: center;
+      padding: 50px 0 0 0;
+    }
+
+    .btn {
+      background: #FF4500;
+      background-image: -webkit-linear-gradient(top, #FF4500, #FF4500);
+      background-image: -moz-linear-gradient(top, #FF4500, #FF4500);
+      background-image: -ms-linear-gradient(top, #FF4500, #FF4500);
+      background-image: -o-linear-gradient(top, #FF4500, #FF4500);
+      background-image: linear-gradient(to bottom, #FF4500, #FF4500);
+      -webkit-border-radius: 5;
+      -moz-border-radius: 5;
+      border-radius: 5px;
+      color: #fafafa;
+      font-size: 20px;
+      padding: 15px 30px 15px 30px;
+      margin-top: 25px;
+      border: solid #c73500 1px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #cf3700;
+      background-image: -webkit-linear-gradient(top, #cf3700, #cf3700);
+      background-image: -moz-linear-gradient(top, #cf3700, #cf3700);
+      background-image: -ms-linear-gradient(top, #cf3700, #cf3700);
+      background-image: -o-linear-gradient(top, #cf3700, #cf3700);
+      background-image: linear-gradient(to bottom, #cf3700, #cf3700);
+      text-decoration: none;
+    }
+
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  
+  <!-- Container Start -->
+  <div id="container">
+
+    <!-- Table Start -->
+    <table>
+      <thead>
+        <tr>
+          <th colspan="4">Skills</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- Bootstrap and MVC Skills -->
+        <tr>
+          <td>Bootstrap Framework</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </td>
+          <td class="adding-space">MVC Pattern</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </td>
+        </tr>
+
+        <!-- CSS and Method Factory Pattern -->
+        <tr>
+          <td>CSS</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </td>
+          <td class="adding-space">Method Factory Pattern</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </td>
+        </tr>
+
+        <!-- HTML and OOP -->
+        <tr>
+          <td>HTML</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </td>
+          <td class="adding-space">Object Oriented Programming</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </td>
+        </tr>
+
+        <!-- JSON and SASS / SCSS -->
+        <tr>
+          <td>JSON</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </td>
+          <td class="adding-space">SASS / SCSS</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </td>
+        </tr>
+
+        <!-- MySQL and SEO -->
+        <tr>
+          <td>MySQL</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </td>
+          <td class="adding-space">SEO</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </td>
+        </tr>
+
+        <!-- PHP and Scrum -->
+        <tr>
+          <td>PHP</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </td>
+          <td class="adding-space">Scrum</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </td>
+        </tr>
+
+        <!-- XML and Singleton Pattern -->
+        <tr>
+          <td>XML</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </td>
+          <td class="adding-space">Singleton Pattern</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </td>
+        </tr>
+
+        <!-- Builder Pattern and UML -->
+        <tr>
+          <td>Builder Pattern</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </td>
+          <td class="adding-space">UML</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </td>
+        </tr>
+
+        <!-- Command Line Interface and WordPress -->
+        <tr>
+          <td>Command Line Interface</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </td>
+          <td class="adding-space">WordPress</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </td>
+        </tr>
+
+        <!-- jQuery and Singleton Pattern -->
+        <tr>
+          <td>jQuery</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </td>
+          <td class="adding-space">Singleton Pattern</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </td>
+        </tr>
+
+        <!-- Java and AngularJS -->
+        <tr>
+          <td>Java</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </td>
+          <td class="adding-space">AngularJS</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </td>
+        </tr>
+
+        <!-- JavaScript and ElasticSearch -->
+        <tr>
+          <td>JavaScript</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </td>
+          <td class="adding-space">ElasticSearch</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </td>
+        </tr>
+
+        <!-- LESS and Ruby -->
+        <tr>
+          <td>LESS</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </td>
+          <td class="adding-space">Ruby</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </td>
+        </tr>
+
+        <!-- Laravel Framework -->
+        <tr>
+          <td>Laravel Framework</td>
+          <td class="rating-container">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </td>
+        </tr>
+      </tbody>
+    </table> <!-- Table End -->
+
+    <div class="btn-section">
+      <p><em>This project is built on a custom made PHP framework.</em></p>
+      <button class="btn">See Project On GitHub</button>
+    </div>
+
+  </div> <!-- Container End -->
+
+</body>
+</html>
